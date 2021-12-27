@@ -111,3 +111,9 @@ export default MyApp;
 - Created `404.js`
 - Added styles in globals.css
 - called directly using ` className="not-found"`
+
+# 8 Redirect
+
+- If error(404) auto redirect to homepage after 3sec
+- done using `useEffect` and `useRouter` with `setTimeout`
+- [doc] (https://nextjs.org/docs/api-reference/next/router#router-object)
