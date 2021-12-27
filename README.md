@@ -117,3 +117,28 @@ export default MyApp;
 - If error(404) auto redirect to homepage after 3sec
 - done using `useEffect` and `useRouter` with `setTimeout`
 - [doc](https://nextjs.org/docs/api-reference/next/router#router-object)
+
+# 9 Images and Metadata
+
+### Images
+
+- All item in public folder can be directly accesed using something like `<img src="/logo.png" />`
+- Correct way is to use Image
+
+```html
+import Image from "next/image";
+<image src="/logo.png" width="{128}" height="{77}" />
+```
+
+### Metadata
+
+```html
+import Head from "next/head";
+<>
+    <Head>
+        <title>Ninja List | Home</title>
+        <meta name="keywords" content="ninjas" />
+    </Head>
+...
+</>
+```
