@@ -171,3 +171,12 @@ import Head from "next/head";
     - This will throw 404 page if fails.
 
 ## Display single item
+
+- `getStaticPaths` This will create all pages
+  - Prebuild all pages
+- `getStaticProps` Props for all pages
+  - Displays pages by url
+  - `getStaticProps` parameter is `context` but we destructure to `params`
+  - This return props is in Details function i.e main page
+
+#
