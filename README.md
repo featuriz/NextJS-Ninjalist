@@ -31,7 +31,7 @@ React NextJS based website. This is an introduction to [Nextjs](https://nextjs.o
 - index.js page will point to parent url
   - ex: `/ninjas` here
 
-# 5 Templating
+## Templating
 
 - app/comps create blocks for layout
   - Layout.js
@@ -39,7 +39,7 @@ React NextJS based website. This is an introduction to [Nextjs](https://nextjs.o
   - Footer.js
 - This can be resued in all/other pages
 
-# 6 Link component
+## Link component
 
 - This adds links to all pages
 - This is nextjs style
@@ -48,3 +48,60 @@ React NextJS based website. This is an introduction to [Nextjs](https://nextjs.o
  import Link from "next/link";
  <Link href="/"><a>Home</a></Link>
 ```
+
+### Hint
+
+- In VSCODE `sfc` will generate Stateless Functional Component.
+
+# 5 Layout
+
+- Create a Lyout.js page
+
+```js
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+const Layout = ({ children }) => {
+  return (
+    <div className="content">
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
+```
+
+- Add this to \_app.js
+- So all pages will have navbar and footer
+- To be noted is `{children}`
+
+```js
+import Layout from "../app/comps/Layout";
+import "../styles/globals.css";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+
+export default MyApp;
+```
+
+# 6 Styles
+
+- Inside styles folder, check `globals.css`
+- For global styles `import '../styles/globals.css'`
+
+## For page based style
+
+- `Home.module.css`
+
+### HINT: on css/styles
+
+- Only class selectors
+- No element selectors
