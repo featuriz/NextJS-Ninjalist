@@ -116,4 +116,4 @@ export default MyApp;
 
 - If error(404) auto redirect to homepage after 3sec
 - done using `useEffect` and `useRouter` with `setTimeout`
-- [doc] (https://nextjs.org/docs/api-reference/next/router#router-object)
+- [doc](https://nextjs.org/docs/api-reference/next/router#router-object)
