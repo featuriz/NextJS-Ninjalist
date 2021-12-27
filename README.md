@@ -105,3 +105,9 @@ export default MyApp;
 
 - Only class selectors
 - No element selectors
+
+# 7 Custom Error pages 404
+
+- Created `404.js`
+- Added styles in globals.css
+- called directly using ` className="not-found"`
