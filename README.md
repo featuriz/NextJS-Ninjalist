@@ -155,4 +155,19 @@ import Head from "next/head";
 - And display those data using map
 - Also added style to the list
 
-#
+# 11 Dynamic Route
+
+- Created `[id].js` page
+  - This is a dynamic url
+- At ninjas page `<Link href={'/ninjas/' + ninja.id} key={ninja.id}>`
+  - This will generate dynamic url to next page i.e `[id].js`
+
+## Data
+
+- Same as list page get all values
+- Map those values to path ids
+- return those paths and fallback: false
+  - fallback: false
+    - This will throw 404 page if fails.
+
+## Display single item
