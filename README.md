@@ -142,3 +142,17 @@ import Head from "next/head";
 ...
 </>
 ```
+
+# 10 API Data
+
+- [jsonplaceholder](https://jsonplaceholder.typicode.com/guide/)
+- Mainly usign [Users](https://jsonplaceholder.typicode.com/users)
+
+- By using `getStaticProps` get `async` data from [users](https://jsonplaceholder.typicode.com/users)
+- return props
+
+- Get those props in method parameter
+- And display those data using map
+- Also added style to the list
+
+#
