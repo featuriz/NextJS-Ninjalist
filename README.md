@@ -179,4 +179,4 @@ import Head from "next/head";
   - `getStaticProps` parameter is `context` but we destructure to `params`
   - This return props is in Details function i.e main page
 
-#
+# END
