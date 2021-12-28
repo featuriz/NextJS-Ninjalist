@@ -179,4 +179,17 @@ import Head from "next/head";
   - `getStaticProps` parameter is `context` but we destructure to `params`
   - This return props is in Details function i.e main page
 
+# Deploy
+
+- I deployed to [vercel](https://vercel.com/featuriz/next-js-ninjalist)
+  - Just create an account https://vercel.com
+    - Using github auth
+    - Dashboard
+    - New Project
+    - Import Git repo
+    - Deploy : I used default settings
+  - After deploy just visit
+  - [My Site](https://next-js-ninjalist.vercel.app/)
+  - I don't know how long will it be there!
+
 # END
