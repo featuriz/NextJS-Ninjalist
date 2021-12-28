@@ -1,5 +1,7 @@
 # NEXTJS
 
+Check this site at [https://next-js-ninjalist.vercel.app/](https://next-js-ninjalist.vercel.app/)
+
 React NextJS based website. This is an introduction to [Nextjs](https://nextjs.org/docs/getting-started)
 
 `npx create-next-app@latest ninjalist`
